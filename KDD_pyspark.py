@@ -57,7 +57,6 @@ except ImportError as e:
     print ("Can not import Spark Modules", e)
     sys.exit(1)
 
-from collections import OrderedDict
 from numpy import array
 from math import sqrt
 
@@ -98,13 +97,13 @@ def clustering_score(data, k):
 if __name__ == "__main__":
     if (len(sys.argv) != 3):
         print "Usage: /home/spark-1.6.1-bin-hadoop2.4/bin/spark-submit --driver-memory 2g " + \
-          "kdd_cup_99_spark.py max_k corrected"
+          "KDD_spark.py max_k corrected"
         sys.exit(1)
 
     # set up environment
     max_k = int(sys.argv[1])
     data_file = sys.argv[2]
-    conf = SparkConf().setAppName("KDDCup99") \
+    conf = SparkConf().setAppName("kdd-cup-99") \
     sc = SparkContext(conf=conf)
 
     # load raw data
