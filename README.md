@@ -36,7 +36,7 @@ and then
 and then
 ```
 #example OTH->1
-#example #SH->11
+#example SH->11
 ```
 ### At the beginning of the time
 You should make sure that place KDD dataset and programs `replace_string_to_value.py` in the same directory
@@ -70,9 +70,11 @@ and if you run the programs named `KDD_pyspark.py`, it will two directories are 
 
 You can names this directory as `Text` or `Workstation`
 
-`put the programs merge_all_data.py` into `Text` or `Workstation` directory
+put the programs `merge_show.py` into `Text` or `Workstation` directory
 
-and run the merge_all_data.py
+also put the `re0` to `rex`, and `la0` to `lax`
+
+and run the `merge_show.py`
 
 ### It will be a long process...
 ### Next do
