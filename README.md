@@ -1,19 +1,23 @@
 # How-to-process-KDD-99-dataset
 Use Introduction
 
-### Some people choose be different from others
-you can insert the dataset into DataBase,and find a new road to Rome,but I didn't choose this road
+### Other undecided authors go round the curve
+you can insert the dataset into database like mysql or sqlite3, but I do not recommend doing this
 
 ## I will replace the KDD-99 data string as a value
 
-Initial data is like this
+The original data is like this
+
 ```
 0,tcp,http,SF,181,5450,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,8,8,0.00,0.00,0.00,0.00,1.00,0.00,0.00,9,9,1.00,0.00,0.11,0.00,0.00,0.00,0.00,0.00,normal.
 ```
-and we can replace string at the 2, 3, 4 position and the result is like this
+
+And we could replace string at the 2, 3, 4 position and the result will like this
+
 ```
 0,1,22,10,181,5450,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,8,8,0.00,0.00,0.00,0.00,1.00,0.00,0.00,9,9,1.00,0.00,0.11,0.00,0.00,0.00,0.00,0.00,normal.
 ```
+
 and if we do this, the accuracy of clustering will be `improved`
 
 when i use the initial data without replace the string as a value, the accuracy of clustering is `97.79%`
@@ -38,12 +42,17 @@ and then
 #example OTH->1
 #example SH->11
 ```
+
+---
+
 ### At the beginning of the time
+
 You should make sure that place KDD dataset and programs `replace_string_to_value.py` in the same directory
 
 and then open the programs with IDE
 
-add you file name in `You_file_path' at the beginning
+<del>add you file name in `You_file_path' at the beginning</del>
+input you file path and name while the program runing
 
 and the run the programs
 
@@ -94,3 +103,4 @@ run the programs and out put the result
 
 * if you have any question with this introduce, send me a email super_big_hero@sina.com
 * see you
+* 具体实现细节可参考我前年的论文(这里有一份,信息安全学报2016-7月刊第一篇也是) (2018-1-12)
