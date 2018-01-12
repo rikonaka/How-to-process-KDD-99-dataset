@@ -96,7 +96,7 @@ def replace_kdd(into_string):
     for i in into_string:
         if cc_num == want_replace[want_num]:
             get_the_value = countingFunction(cc_num, i)
-            print i, get_the_value
+            print(i, get_the_value)
             replace_list.append(str(get_the_value))
             cc_num += 1
             want_num += 1
@@ -116,13 +116,15 @@ def load_kdd():
     try:
         kdd_read = open(You_file_path, "r")
     except IOError, e:
-        print 'Can not open the kdd file'
+        print('Can not open the kdd file')
+		print(e)
 		sys.exit(1)
 
     try:
         kdd_write = open(Name_you_want_to_save, "a")
     except IOError, e:
-        print 'Can not open the save file'
+        print('Can not open the save file')
+		print(e)
 		sys.exit(1)
 
     kdd_readlines = kdd_read.readlines()
