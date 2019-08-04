@@ -101,6 +101,4 @@ run the programs and out put the result
 
 ##That's all
 
-* if you have any question with this introduce, send me a email super_big_hero@sina.com
-* see you
-* 具体实现细节可参考我前年的论文(这里有一份,信息安全学报2016-7月刊第一篇也是) (2018-1-12)
+* if you have any question with this introduce, send me a email xxy1836@gmail.com
